@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="orders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="order" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="product" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:string" use="required"/>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="quantity" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required"/>
+            <xs:attribute name="customer" type="xs:string" use="required"/>
+            <xs:attribute name="date" type="xs:date" use="required"/>
+
+            <!-- Mỗi product/@id là duy nhất trong phạm vi 1 order -->
+            <xs:unique name="UniqueProductPerOrder">
+              <xs:selector xpath="product"/>
+              <xs:field xpath="@id"/>
+            </xs:unique>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="shipment" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="orderRef" type="xs:IDREF" use="required"/>
+            <xs:attribute name="carrier" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Ghi chú: order/@id dùng xs:ID nên duy nhất toàn tài liệu -->
+</xs:schema>
+
+
