@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="orders.xsd">
+  <order id="O001" customer="SV01" date="2025-09-01">
+    <product id="P01" name="Bút bi" quantity="10"/>
+    <product id="P02" name="Vở 200 trang" quantity="5"/>
+  </order>
+  <order id="O002" customer="SV02" date="2025-09-02">
+    <product id="P01" name="Bút bi" quantity="3"/>
+    <product id="P03" name="Thước kẻ" quantity="2"/>
+  </order>
+
+  <shipment orderRef="O001" carrier="VNPost"/>
+</orders>
+
+
