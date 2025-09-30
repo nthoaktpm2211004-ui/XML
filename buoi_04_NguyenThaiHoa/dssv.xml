@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dssv.xsd">
+  <KHOA>
+    <MA>KH00123456</MA>
+    <TEN>congnghe</TEN>
+  </KHOA>
+  <KHOA>
+    <MA>KH00999999</MA>
+    <TEN>quantri</TEN>
+  </KHOA>
+
+  <LOP>
+    <MA>LP00000001</MA>
+    <TEN>CNPM K1</TEN>
+    <KHOARef>KH00123456</KHOARef>
+  </LOP>
+  <LOP>
+    <MA>LP00000002</MA>
+    <TEN>HTTT K2</TEN>
+    <KHOARef>KH00123456</KHOARef>
+  </LOP>
+  <LOP>
+    <MA>LP00000003</MA>
+    <TEN>QTKD K1</TEN>
+    <KHOARef>KH00999999</KHOARef>
+  </LOP>
+
+  <SINHVIEN>
+    <MSSV>SV00000001</MSSV>
+    <HOTEN>Nguyễn Văn A</HOTEN>
+    <EMAIL>a.nguyen@example.com</EMAIL>
+    <DIACHI>01 Đường A, Quận 1</DIACHI>
+    <SDT>0123456789</SDT>
+    <LOPRef>LP00000001</LOPRef>
+  </SINHVIEN>
+  <SINHVIEN>
+    <MSSV>SV00000002</MSSV>
+    <HOTEN>Trần Thị B</HOTEN>
+    <EMAIL>b.tran@example.com</EMAIL>
+    <DIACHI>02 Đường B, Quận 3</DIACHI>
+    <SDT>0987654321</SDT>
+    <LOPRef>LP00000002</LOPRef>
+  </SINHVIEN>
+  <SINHVIEN>
+    <MSSV>SV00000003</MSSV>
+    <HOTEN>Lê C</HOTEN>
+    <EMAIL>c.le@example.com</EMAIL>
+    <DIACHI>03 Đường C, Quận 5</DIACHI>
+    <SDT>0900000000</SDT>
+    <LOPRef>LP00000003</LOPRef>
+  </SINHVIEN>
+</DSSV>
+
+
