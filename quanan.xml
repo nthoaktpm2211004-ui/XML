@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUANAN xmlns="http://example.com/quanan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://example.com/quanan quanan.xsd">
+  <!-- BAN -->
+  <BAN>
+    <TENBAN>BN001</TENBAN>
+    <SOBAN>1</SOBAN>
+  </BAN>
+  <BAN>
+    <TENBAN>BN002</TENBAN>
+    <SOBAN>2</SOBAN>
+  </BAN>
+  <BAN>
+    <TENBAN>BN003</TENBAN>
+    <SOBAN>3</SOBAN>
+  </BAN>
+  <BAN>
+    <TENBAN>BN004</TENBAN>
+    <SOBAN>4</SOBAN>
+  </BAN>
+  <BAN>
+    <TENBAN>BN005</TENBAN>
+    <SOBAN>5</SOBAN>
+  </BAN>
+
+  <!-- MON -->
+  <MON>
+    <MAMON>MN001</MAMON>
+    <TENMON>Phở bò</TENMON>
+    <GIA>45000</GIA>
+    <HINHANH>pho.jpg</HINHANH>
+  </MON>
+  <MON>
+    <MAMON>MN002</MAMON>
+    <TENMON>Bún chả</TENMON>
+    <GIA>40000</GIA>
+    <HINHANH>buncha.jpg</HINHANH>
+  </MON>
+  <MON>
+    <MAMON>MN003</MAMON>
+    <TENMON>Cơm gà</TENMON>
+    <GIA>35000</GIA>
+    <HINHANH>comga.jpg</HINHANH>
+  </MON>
+  <MON>
+    <MAMON>MN004</MAMON>
+    <TENMON>Bánh mì</TENMON>
+    <GIA>20000</GIA>
+    <HINHANH>banhmi.jpg</HINHANH>
+  </MON>
+  <MON>
+    <MAMON>MN005</MAMON>
+    <TENMON>Trà đá</TENMON>
+    <GIA>5000</GIA>
+    <HINHANH>trada.jpg</HINHANH>
+  </MON>
+
+  <!-- NHANVIEN -->
+  <NHANVIEN>
+    <MANV>NV001</MANV>
+    <TENVN>Nguyễn An</TENVN>
+    <SDT>0123456789</SDT>
+    <DIACHI>Q1</DIACHI>
+    <GIOITINH>Nam</GIOITINH>
+    <USERNAME>nhanvien1</USERNAME>
+    <PASSWORD>password123</PASSWORD>
+  </NHANVIEN>
+  <NHANVIEN>
+    <MANV>NV002</MANV>
+    <TENVN>Trần Bình</TENVN>
+    <SDT>0987654321</SDT>
+    <DIACHI>Q3</DIACHI>
+    <GIOITINH>Nam</GIOITINH>
+    <USERNAME>userabc</USERNAME>
+    <PASSWORD>longpassword</PASSWORD>
+  </NHANVIEN>
+  <NHANVIEN>
+    <MANV>NV003</MANV>
+    <TENVN>Phạm Chi</TENVN>
+    <SDT>0900000000</SDT>
+    <DIACHI>Q5</DIACHI>
+    <GIOITINH>Nữ</GIOITINH>
+    <USERNAME>quanan_user</USERNAME>
+    <PASSWORD>pass123456</PASSWORD>
+  </NHANVIEN>
+  <NHANVIEN>
+    <MANV>NV004</MANV>
+    <TENVN>Lê Dũng</TENVN>
+    <SDT>0911111111</SDT>
+    <DIACHI>Q7</DIACHI>
+    <GIOITINH>Nam</GIOITINH>
+    <USERNAME>nhanvien_04</USERNAME>
+    <PASSWORD>mypassword10</PASSWORD>
+  </NHANVIEN>
+  <NHANVIEN>
+    <MANV>NV005</MANV>
+    <TENVN>Đỗ Em</TENVN>
+    <SDT>0922222222</SDT>
+    <DIACHI>Q10</DIACHI>
+    <GIOITINH>Nữ</GIOITINH>
+    <USERNAME>account05</USERNAME>
+    <PASSWORD>pw1234567890</PASSWORD>
+  </NHANVIEN>
+
+  <!-- HOADON -->
+  <HOADON>
+    <SOHD>1001</SOHD>
+    <NGAYLAP>2025-09-01</NGAYLAP>
+    <TONGTIEN>80000</TONGTIEN>
+    <LAP_HD>NV001</LAP_HD>
+    <CTHD>
+      <MAMONRef>MN001</MAMONRef>
+      <SOLUONG>1</SOLUONG>
+    </CTHD>
+    <CTHD>
+      <MAMONRef>MN005</MAMONRef>
+      <SOLUONG>2</SOLUONG>
+    </CTHD>
+    <THANHTOAN>
+      <TENBANRef>BN001</TENBANRef>
+    </THANHTOAN>
+  </HOADON>
+  <HOADON>
+    <SOHD>1002</SOHD>
+    <NGAYLAP>2025-09-02</NGAYLAP>
+    <TONGTIEN>55000</TONGTIEN>
+    <LAP_HD>NV002</LAP_HD>
+    <CTHD>
+      <MAMONRef>MN004</MAMONRef>
+      <SOLUONG>2</SOLUONG>
+    </CTHD>
+    <THANHTOAN>
+      <TENBANRef>BN002</TENBANRef>
+    </THANHTOAN>
+  </HOADON>
+  <HOADON>
+    <SOHD>1003</SOHD>
+    <NGAYLAP>2025-09-03</NGAYLAP>
+    <TONGTIEN>40000</TONGTIEN>
+    <LAP_HD>NV003</LAP_HD>
+    <CTHD>
+      <MAMONRef>MN002</MAMONRef>
+      <SOLUONG>1</SOLUONG>
+    </CTHD>
+    <THANHTOAN>
+      <TENBANRef>BN003</TENBANRef>
+    </THANHTOAN>
+  </HOADON>
+  <HOADON>
+    <SOHD>1004</SOHD>
+    <NGAYLAP>2025-09-04</NGAYLAP>
+    <TONGTIEN>35000</TONGTIEN>
+    <LAP_HD>NV004</LAP_HD>
+    <CTHD>
+      <MAMONRef>MN003</MAMONRef>
+      <SOLUONG>1</SOLUONG>
+    </CTHD>
+    <THANHTOAN>
+      <TENBANRef>BN004</TENBANRef>
+    </THANHTOAN>
+  </HOADON>
+  <HOADON>
+    <SOHD>1005</SOHD>
+    <NGAYLAP>2025-09-05</NGAYLAP>
+    <TONGTIEN>25000</TONGTIEN>
+    <LAP_HD>NV005</LAP_HD>
+    <CTHD>
+      <MAMONRef>MN005</MAMONRef>
+      <SOLUONG>5</SOLUONG>
+    </CTHD>
+    <THANHTOAN>
+      <TENBANRef>BN005</TENBANRef>
+    </THANHTOAN>
+  </HOADON>
+
+</QUANAN>
+
+
