@@ -1,0 +1,12 @@
+# XML Processor - Requirements
+# Các thư viện cần thiết cho ứng dụng xử lý XML và MySQL
+
+# Xử lý XML và XSD
+lxml==4.9.3
+
+# Kết nối MySQL
+mysql-connector-python==8.2.0
+
+# Các thư viện Python chuẩn (không cần cài đặt)
+# xml.etree.ElementTree - có sẵn trong Python
+# sys, os, typing - có sẵn trong Python
